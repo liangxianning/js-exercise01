@@ -7,14 +7,18 @@
 </head>
 <body>
 	<h1>Hello World!</h1>
+	<button class="btn" data-toggle="button">Click Me</button>
+	<button class="btn" data-toggle="button">Click Me2</button>
+	<button id="fat-btn" class="btn btn-primary" data-loading-text="loading..."> 载入状态 </button>
 	
 	
-<script src="<%=request.getContextPath()%>/dwr/engine.js"></script>
-<script src="<%=request.getContextPath()%>/dwr/interface/hello01.js"></script>
+	
+<script src="<%=request.getContextPath()%>/resources/js/jquery.min.js"></script>
+<script src="<%=request.getContextPath()%>/resources/js/lessony.button.js"></script>
 <script>
-	hello01.sayHello("zhang三", function(data) {
-		alert(data);
-	});
+$(function(){
+	
+});
 </script>
 </body>
 </html>
